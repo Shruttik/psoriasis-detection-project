@@ -46,84 +46,70 @@ skincare/
 └── requirements.txt
 
 
-
 ---
 
 ## Installation
 
 ### 1. Clone repository
-```bash
 git clone https://github.com/<your-username>/psoriasis-detection-project.git
 cd psoriasis-detection-project
 
 
-
-
-2. Install dependencies
+### 2. Install dependencies
 pip install -r requirements.txt
 
-3. Run application
+
+### 3. Run application
 python app.py
 
 
-Open browser:
-
+Open browser and visit:
 http://127.0.0.1:5000
 
-How It Works
 
-User uploads a skin image.
+---
 
-Image is preprocessed.
+## How It Works
+1. User uploads a skin image.
+2. Image is preprocessed.
+3. Model predicts severity.
+4. Result and recommendation are displayed.
 
-Model predicts severity.
+---
 
-Result and recommendation are displayed.
+## Dataset and Training
+- Images labeled into severity classes
+- Data augmentation used
+- Train/test split applied
+- Transfer learning used for faster convergence
 
-Dataset and Training
+---
 
-Images labeled into severity classes
+## Limitations
+- Model accuracy depends on dataset quality
+- Not a replacement for medical diagnosis
+- Needs larger clinical dataset for production use
 
-Data augmentation used
+---
 
-Train/test split applied
+## Future Improvements
+- Larger medical dataset integration
+- Mobile app deployment
+- Doctor recommendation system
+- Multi-disease skin detection
+- Real-time camera prediction
 
-Transfer learning used for faster convergence
+---
 
-Limitations
+## Requirements
+Main libraries used:
+- Python
+- TensorFlow / Keras
+- Flask or Streamlit
+- OpenCV
+- NumPy
 
-Model accuracy depends on dataset quality
+---
 
-Not a replacement for medical diagnosis
-
-Needs larger clinical dataset for production use
-
-Future Improvements
-
-Larger medical dataset integration
-
-Mobile app deployment
-
-Doctor recommendation system
-
-Multi-disease skin detection
-
-Real-time camera prediction
-
-Requirements
-
-Main libraries:
-
-Python
-
-TensorFlow / Keras
-
-Flask or Streamlit
-
-OpenCV
-
-NumPy
-
-Author
-
+## Author
 Shruti Kukreti
