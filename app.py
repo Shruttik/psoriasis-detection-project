@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from PIL import Image
 
 # Configuration
-MODEL_PATH = r"c:\Users\HP\Desktop\skincare\psoriasis_severity_model.h5"
+MODEL_PATH = r"psoriasis_severity_model.h5"
 CLASSES = ['mild', 'moderate', 'severe']
 
 # Page Config
